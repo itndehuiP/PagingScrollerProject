@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,103 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PagingScrollerProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6V9-kt-bFu">
+                                <rect key="frame" x="12" y="74" width="390" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="jeY-20-XFj"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="6dT-1H-aIm" kind="embed" id="y84-1w-qVx"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6V9-kt-bFu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="12" id="EdZ-wl-rNS"/>
+                            <constraint firstItem="6V9-kt-bFu" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="kwH-UC-Faw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6V9-kt-bFu" secondAttribute="trailing" constant="12" id="pVS-l2-1h5"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="126.5625"/>
+        </scene>
+        <!--Banner View Controller-->
+        <scene sceneID="dLh-Dw-P0O">
+            <objects>
+                <viewController id="6dT-1H-aIm" customClass="BannerViewController" customModule="PagingScrollerProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8Vs-ib-VOl">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="150"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="U11-rB-Gl4">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="150"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="TjA-ur-zAd">
+                                        <rect key="frame" x="0.0" y="0.0" width="3565" height="150"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Banner2" translatesAutoresizingMaskIntoConstraints="NO" id="cU5-kQ-kgX">
+                                                <rect key="frame" x="0.0" y="0.0" width="768" height="150"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Banner4" translatesAutoresizingMaskIntoConstraints="NO" id="aUX-nv-vzD">
+                                                <rect key="frame" x="767.99999999999989" y="0.0" width="797.00000000000034" height="150"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Banner3" translatesAutoresizingMaskIntoConstraints="NO" id="Pza-8b-YBI">
+                                                <rect key="frame" x="1565" y="0.0" width="1200" height="150"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Banner1" translatesAutoresizingMaskIntoConstraints="NO" id="wpT-bm-BoQ">
+                                                <rect key="frame" x="2765" y="0.0" width="800" height="150"/>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.6802676916" green="0.73954874280000005" blue="0.83933562039999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="TjA-ur-zAd" firstAttribute="leading" secondItem="U11-rB-Gl4" secondAttribute="leading" id="TCR-OH-3ML"/>
+                                    <constraint firstAttribute="trailing" secondItem="TjA-ur-zAd" secondAttribute="trailing" id="UCX-6x-YhP"/>
+                                    <constraint firstAttribute="bottom" secondItem="TjA-ur-zAd" secondAttribute="bottom" id="juq-oy-1nC"/>
+                                    <constraint firstItem="TjA-ur-zAd" firstAttribute="top" secondItem="U11-rB-Gl4" secondAttribute="top" id="pkH-aE-hiN"/>
+                                    <constraint firstItem="TjA-ur-zAd" firstAttribute="height" secondItem="U11-rB-Gl4" secondAttribute="height" id="rK3-Vg-Tta"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="6dT-1H-aIm" id="n7W-kK-HMs"/>
+                                </connections>
+                            </scrollView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" translatesAutoresizingMaskIntoConstraints="NO" id="9dG-Yk-bGm">
+                                <rect key="frame" x="20" y="69" width="350" height="37"/>
+                            </pageControl>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="9dG-Yk-bGm" secondAttribute="trailing" id="4nu-ZT-jAe"/>
+                            <constraint firstItem="U11-rB-Gl4" firstAttribute="leading" secondItem="8Vs-ib-VOl" secondAttribute="leading" id="UtE-5a-Exg"/>
+                            <constraint firstItem="U11-rB-Gl4" firstAttribute="top" secondItem="8Vs-ib-VOl" secondAttribute="top" id="ZXh-rw-bq2"/>
+                            <constraint firstAttribute="trailing" secondItem="U11-rB-Gl4" secondAttribute="trailing" id="cl4-xF-m69"/>
+                            <constraint firstAttribute="bottom" secondItem="U11-rB-Gl4" secondAttribute="bottom" id="f4O-ev-UCM"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="9dG-Yk-bGm" secondAttribute="bottom" constant="10" id="qap-82-dxh"/>
+                            <constraint firstItem="9dG-Yk-bGm" firstAttribute="leading" secondItem="8Vs-ib-VOl" secondAttribute="leadingMargin" id="r2M-4Q-YoQ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="pageControl" destination="9dG-Yk-bGm" id="pmF-Fw-mKb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AuZ-NN-c85" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1111.5942028985507" y="126.5625"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Banner1" width="800" height="800"/>
+        <image name="Banner2" width="768" height="1024"/>
+        <image name="Banner3" width="1200" height="800"/>
+        <image name="Banner4" width="797" height="495"/>
+    </resources>
 </document>

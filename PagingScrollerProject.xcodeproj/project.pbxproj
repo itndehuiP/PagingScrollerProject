@@ -12,6 +12,8 @@
 		62F64BED22C3190700891DE0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62F64BEB22C3190700891DE0 /* Main.storyboard */; };
 		62F64BEF22C3190800891DE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62F64BEE22C3190800891DE0 /* Assets.xcassets */; };
 		62F64BF222C3190800891DE0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62F64BF022C3190800891DE0 /* LaunchScreen.storyboard */; };
+		62F64BFA22C32BE800891DE0 /* BannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F64BF922C32BE800891DE0 /* BannerViewController.swift */; };
+		62F64BFC22C331E700891DE0 /* Images in Resources */ = {isa = PBXBuildFile; fileRef = 62F64BFB22C331E700891DE0 /* Images */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		62F64BEE22C3190800891DE0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		62F64BF122C3190800891DE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		62F64BF322C3190800891DE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		62F64BF922C32BE800891DE0 /* BannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerViewController.swift; sourceTree = "<group>"; };
+		62F64BFB22C331E700891DE0 /* Images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Images; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,12 +58,14 @@
 		62F64BE622C3190700891DE0 /* PagingScrollerProject */ = {
 			isa = PBXGroup;
 			children = (
+				62F64BFB22C331E700891DE0 /* Images */,
 				62F64BE722C3190700891DE0 /* AppDelegate.swift */,
 				62F64BE922C3190700891DE0 /* ViewController.swift */,
 				62F64BEB22C3190700891DE0 /* Main.storyboard */,
 				62F64BEE22C3190800891DE0 /* Assets.xcassets */,
 				62F64BF022C3190800891DE0 /* LaunchScreen.storyboard */,
 				62F64BF322C3190800891DE0 /* Info.plist */,
+				62F64BF922C32BE800891DE0 /* BannerViewController.swift */,
 			);
 			path = PagingScrollerProject;
 			sourceTree = "<group>";
@@ -122,6 +128,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62F64BFC22C331E700891DE0 /* Images in Resources */,
 				62F64BF222C3190800891DE0 /* LaunchScreen.storyboard in Resources */,
 				62F64BEF22C3190800891DE0 /* Assets.xcassets in Resources */,
 				62F64BED22C3190700891DE0 /* Main.storyboard in Resources */,
@@ -135,6 +142,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62F64BFA22C32BE800891DE0 /* BannerViewController.swift in Sources */,
 				62F64BEA22C3190700891DE0 /* ViewController.swift in Sources */,
 				62F64BE822C3190700891DE0 /* AppDelegate.swift in Sources */,
 			);
